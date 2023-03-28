@@ -1,11 +1,8 @@
 package blackops.DItutorial.DItutorial.controllers;
 
-import blackops.DItutorial.DItutorial.services.GreetingServiceImpl;
+import blackops.DItutorial.DItutorial.services.ConstructorInjectedGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class PropertyInjectedControllerTest {
     PropertyInjectedController controller;
@@ -13,7 +10,7 @@ class PropertyInjectedControllerTest {
     public void setUp(){
         controller = new PropertyInjectedController();
         // Property injection - bad, cannot be private
-        controller.greetingService = new GreetingServiceImpl();
+        controller.greetingService = new ConstructorInjectedGreetingService();
     }
     @Test
     void sayHello() {

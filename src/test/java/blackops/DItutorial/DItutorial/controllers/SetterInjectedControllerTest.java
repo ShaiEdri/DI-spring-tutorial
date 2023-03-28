@@ -1,10 +1,8 @@
 package blackops.DItutorial.DItutorial.controllers;
 
-import blackops.DItutorial.DItutorial.services.GreetingServiceImpl;
+import blackops.DItutorial.DItutorial.services.ConstructorInjectedGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class SetterInjectedControllerTest {
     private SetterInjectedController controller;
@@ -12,7 +10,7 @@ class SetterInjectedControllerTest {
     public void setUp(){
         // Setter injection - better but not clean
         controller = new SetterInjectedController();
-        controller.setGreetingService(new GreetingServiceImpl());
+        controller.setGreetingService(new ConstructorInjectedGreetingService());
     }
     @Test
     void sayHello() {
