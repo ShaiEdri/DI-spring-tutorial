@@ -14,8 +14,11 @@ public class DiTutorialApplication {
 	public static void main(String[] args) {
 
 		ApplicationContext c = SpringApplication.run(DiTutorialApplication.class, args);
-		//MyController x = (MyController) c.getBean("myController");
-		//System.out.println(x.sayHello());
+
+		System.out.println("---> Property:");
+		MyController controller = (MyController) c.getBean("myController");
+		System.out.println(controller.sayHello());
+
 		System.out.println("---> Property:");
 		PropertyInjectedController propertyInjectedController = (PropertyInjectedController) c.getBean("propertyInjectedController");
 		System.out.println(propertyInjectedController.sayHello());
