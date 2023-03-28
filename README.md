@@ -1,6 +1,6 @@
 # DI-spring-tutorial
-Project to demonstrate DI using spring (Gradle) <br>
-Can find the workflow in  Issues tab<br>
+Project to demonstrate Dependency Injection using spring (Gradle) <br>
+<h3> Can find the workflow in  Issues  tab </h3> <br>
 <br>
 Covers:<br>
 The spring context <br>
