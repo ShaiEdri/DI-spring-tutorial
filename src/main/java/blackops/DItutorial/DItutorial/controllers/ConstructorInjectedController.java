@@ -13,7 +13,6 @@ public class ConstructorInjectedController {
     }
 
     public String sayHello(){
-        System.out.println(greetingService);
         return greetingService.sayHello();
     }
 }
