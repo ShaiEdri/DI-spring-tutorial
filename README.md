@@ -10,6 +10,5 @@ Types of DI<br>
 Qualifiers<br>
 Primary beans<br>
 Profiles<br>
-Beans life cycle<br>
 
 
